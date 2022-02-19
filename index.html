@@ -1,0 +1,64 @@
+<html>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<head>
+	<div class="title"><h1>Search For A Recipe</h1></div>
+</head>
+
+<body>
+	<form class="form>" <fieldset>
+    <h2>Enter an ingredient:</h2>
+    <input placeholder="enter an ingredient" id="ingredient"> 
+    <h2>Intolerances:</h2>
+    <label>Gluten Free</label>
+    <input type="checkbox" id="gluten">
+    <label>Dairy Free</label>
+    <input type="checkbox" id="dairy">
+		<label>Peanut Free</label>
+    <input type="checkbox" id="peanut">
+		<label>Seafood Free</label>
+    <input type="checkbox" id="seafood">
+		<label>Egg Free</label>
+    <input type="checkbox" id="egg">
+		<br><h2>Diets:</h2>
+		<label>Vegetarian</label>
+    <input type="checkbox" id="vegetarian">
+		<label>Ketogenic</label>
+    <input type="checkbox" id="ketogenic">
+		<label>Vegan</label>
+    <input type="checkbox" id="vegan">
+		<br><h2>Other Preferences:</h2>
+    <label>Max Cooking Time:</label>
+    <input placeholder="number of minutes" id="cookTime"> 
+		<p></p>	
+		<label>Cuisine:</label>
+    <input placeholder="enter a cuisine" id="cuisine"> 
+		<br><h2>Sort By:</h2>
+		<label>Number of Calories</label>
+    <input type="checkbox" id="calories">
+		<label>Popularity</label>
+    <input type="checkbox" id="popularity">
+		<label>Price</label>
+    <input type="checkbox" id="price">
+    <p></p>
+    </fieldset>
+		<button type="button" onclick="getInfo()">Find A Recipe</button>
+		</form>
+		<div class="row1">
+			<div id="meal0"></div>
+			<div id="meal1"></div>
+			<div id="meal2"></div>
+		</div>
+		<div class="row2">
+			<div id="meal3"></div>
+			<div id="meal4"></div>
+			<div id="meal5"></div>
+		</div>
+		<div class="row3">
+			<div id="meal6"></div>
+			<div id="meal7"></div>
+			<div id="meal8"></div>
+		</div>
+
+</body>
+</html>
